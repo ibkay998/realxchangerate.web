@@ -1,7 +1,7 @@
-import React from 'react'
-import EnCurrencyCh from '../encurrencychange/EnCurrencyCh'
-import EnInfo from '../encyinfo/EnInfo'
-import EnStat from '../enstat/EnStat';
+import React from "react";
+import EnCurrencyCh from "../encurrencychange/EnCurrencyCh";
+import EnInfo from "../encyinfo/EnInfo";
+import EnStat from "../enstat/EnStat";
 import EnDetail from "../endetail/EnDetail";
 
 const Detailpage = () => {
@@ -11,12 +11,12 @@ const Detailpage = () => {
       <div>
         <EnCurrencyCh />
 
-        <EnDetail  />
+        <EnDetail />
       </div>
 
       <EnStat />
     </div>
   );
-}
+};
 
-export default Detailpage
+export default Detailpage;

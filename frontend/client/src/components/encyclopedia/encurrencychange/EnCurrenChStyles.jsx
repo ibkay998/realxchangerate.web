@@ -15,6 +15,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: white transparent;
 `;
 
 export const Header = styled.h1`
