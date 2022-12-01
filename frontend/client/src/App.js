@@ -33,7 +33,6 @@ import {
   CookiePolicy,
   Glossary,
   OnlineAdvertising,
-  ApplyToAdvertise,
   Ambassadors,
   Home,
 } from "./Pages";
@@ -43,10 +42,7 @@ import ErrorPage from "./Pages/404/ErrorPage";
 import SingleNews from "./Pages/SingleNews/SingleNews";
 import Article from "./Pages/Press/Article/Article";
 import PressNews from "./Pages/Press/PressRelease/News";
-import GetInTouch from "./Pages/GetInTouch/GetInTouch";
-import CurrencyProfile from "./Pages/CurrencyProfile/CurrencyProfile";
 // import ScrollToTop from "./utils/ScrollToTop";
-import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy";
 
 function App() {
   return (
@@ -55,14 +51,13 @@ function App() {
       <Router>
         <div className="App">
           <NavComponent />
-
+          
           <Routes>
             {/*---==== Contents Sections  ====---*/}
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/compliance" element={<Compliance />} />
             <Route path="/help-center" element={<HelpCenter />} />
-            <Route path="/currency-profile" element={<CurrencyProfile />} />
             <Route path="/news" element={<News />} />
             {/* Adding path for one news  */}
             <Route path="/news/:id" element={<SingleNews />} />
@@ -92,10 +87,7 @@ function App() {
               element={<HistoricalCurrencyExchange />}
             />
             <Route path="/fraud-report" element={<FraudReport />} />
-            {/* Adding get in touch route */}
-            <Route path="/get-in-touch" element={<GetInTouch />} />
             <Route path="/Cookie-policy" element={<CookiePolicy />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/glossary" element={<Glossary />} />
             <Route path="/advertising" element={<OnlineAdvertising />} />
             <Route path="/ambassadors" element={<Ambassadors />} />

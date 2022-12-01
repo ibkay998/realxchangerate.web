@@ -19,11 +19,20 @@ function Hero() {
         the best deal possible.
       </Typography>
       <Box
+        sx={{
+          width: "100%",
+          display: "flex",
+          justifyContent: { xs: "center", lg: "left" },
+        }}
+      >
+        {/* <img src={scan} alt=" scan our item to download" width="50%" /> */}
+      </Box>
+      <Box
         className="store"
         sx={{
           width: "100%",
           display: "flex",
-          justifyContent: "center",
+          justifyContent: { xs: "center", lg: "left" },
           alignItems: "center",
           gap: "1.4rem",
         }}
