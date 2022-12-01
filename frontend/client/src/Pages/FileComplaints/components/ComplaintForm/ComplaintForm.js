@@ -1,7 +1,12 @@
 import React, { useRef, useState, useEffect } from "react";
-import { StyledComplaintForm, SuccessMessage } from "./ComplaintForm.styled";
+import {
+  StyledComplaintForm,
+  SuccessMessage,
+  StyledFormTop,
+} from "./ComplaintForm.styled";
+import ArrowLeft from "../assets/arrow-left.svg";
 
-const ComplaintForm = () => {
+const ComplaintForm = ({ handleShowForm }) => {
   const [showSuccess, setShowSuccess] = useState(false);
 
   const nameRef = useRef();
@@ -40,12 +45,21 @@ const ComplaintForm = () => {
       {showSuccess && (
         <SuccessMessage>Message sent successfully.</SuccessMessage>
       )}
+      <StyledFormTop>
+        <img
+          src={ArrowLeft}
+          alt="arrow left"
+          height={30}
+          onClick={() => {
+            handleShowForm();
+          }}
+          style={{ cursor: "pointer" }}
+        />
+        <h1>Complaint Form</h1>
+      </StyledFormTop>
       <StyledComplaintForm>
-        <h3>We are always here for you.</h3>
-        <p>
-          We hoped our FAQs would help. Since they didn't, please fill this this
-          short form and we'd give you special attention as quickly as possible
-        </p>
+        <h3>We are always at your service</h3>
+        <p>Kindly complete the form below to enable us address your query</p>
 
         <form onSubmit={handleSubmit}>
           <label htmlFor="name">Your name:</label>

@@ -17,10 +17,6 @@ export const StyledComplaintForm = styled.section`
     font-weight: bold;
     margin-bottom: 20px;
     text-align: center;
-
-    @media screen and (max-width: 500px) {
-      text-align: start;
-    }
   }
 
   & p {
@@ -102,4 +98,34 @@ export const SuccessMessage = styled.div`
   font-weight: bold;
   z-index: 1000;
   text-align: center;
+`;
+
+export const StyledFormTop = styled.div`
+  height: 200px;
+  background-color: #00368c;
+  display: grid;
+  place-items: center;
+  position: relative;
+
+  @media screen and (max-width: 500px) {
+    height: 150px;
+  }
+
+  & h1 {
+    color: white;
+    font-size: 35px;
+
+    @media screen and (max-width: 500px) {
+      font-size: 25px;
+    }
+  }
+
+  & img {
+    position: absolute;
+    left: 10%;
+
+    @media screen and (max-width: 500px) {
+      height: 16px;
+    }
+  }
 `;

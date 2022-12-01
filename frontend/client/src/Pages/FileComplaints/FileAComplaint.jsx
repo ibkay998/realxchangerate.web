@@ -1,11 +1,9 @@
-import ComplaintQuery from "./components/complaint-query/ComplaintQuery";
-import ComplaintForm from "./components/complaint-form/ComplaintForm";
+import ComplaintMainPage from "./components/MainPage/ComplaintMainPage";
 
 const FileAComplaint = () => {
   return (
     <>
-      <ComplaintQuery />
-      <ComplaintForm />
+      <ComplaintMainPage />
     </>
   );
 };
